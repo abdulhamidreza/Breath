@@ -23,7 +23,6 @@ import com.interview.breath.databinding.ActivityLandingBinding
 
 class LandingActivity : AppCompatActivity() {
     private var mGoogleSignInClient: GoogleSignInClient? = null
-    private lateinit var signOutBtn: AppCompatButton
     private lateinit var binding: ActivityLandingBinding
     private var recyclerView: RecyclerView? = null
     private var gridLayoutManager: GridLayoutManager? = null
