@@ -1,4 +1,4 @@
-package com.interview.breath.ui.main
+package com.interview.breath.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.interview.breath.R
-import com.interview.breath.ui.main.login.LandingActivity
 
 
 class LoginActivity : AppCompatActivity() {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.interview.breath">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,11 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Breath">
         <activity
-            android:name=".ui.main.login.LandingActivity"
+            android:name=".ui.LandingActivity"
             android:exported="false"
             android:label="@string/title_activity_landing" />
         <activity
-            android:name=".ui.main.LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_login">
             <intent-filter>
