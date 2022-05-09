@@ -12,11 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Breath">
         <activity
+            android:name=".ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_new_doc"
+            android:theme="@style/Theme.Breath.Fullscreen" />
+        <activity
             android:name=".ui.LandingActivity"
             android:exported="false"
             android:label="@string/title_activity_landing" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.NewDocActivity"
             android:exported="true"
             android:label="@string/title_activity_login">
             <intent-filter>
