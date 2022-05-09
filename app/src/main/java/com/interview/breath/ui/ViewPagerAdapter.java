@@ -12,13 +12,13 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.interview.breath.R;
 
-public class ViewAdapter extends PagerAdapter {
+public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
     private Integer[] images = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.foure};
 
-    public ViewAdapter(Context context) {
+    public ViewPagerAdapter(Context context) {
         this.context = context;
     }
 

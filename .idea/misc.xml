@@ -5,18 +5,25 @@
       <map>
         <entry key="app/src/main/res/layout-v31/image_gridelayout.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.29523809523809524" />
+        <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.196875" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.16953125" />
+        <entry key="app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.1" />
         <entry key="app/src/main/res/layout/action_list.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/activity_landing.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22604166666666667" />
-        <entry key="app/src/main/res/layout/activity_new_doc.xml" value="0.22604166666666667" />
+        <entry key="app/src/main/res/layout/activity_new_doc.xml" value="0.12704918032786885" />
+        <entry key="app/src/main/res/layout/activity_scrolling.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/doctor_item.xml" value="0.24454895254382214" />
         <entry key="app/src/main/res/layout/image_gridelayout.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.125" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout/pager_item.xml" value="0.22604166666666667" />
+        <entry key="app/src/main/res/layout/persent_item.xml" value="0.24454895254382214" />
         <entry key="app/src/main/res/menu/action_bar.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/menu/menu_scrolling.xml" value="0.24454895254382214" />
         <entry key="app/src/main/res/xml/main_menu.xml" value="0.29791666666666666" />
       </map>
     </option>

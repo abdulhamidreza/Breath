@@ -13,10 +13,10 @@ import com.bumptech.glide.request.RequestOptions
 import com.interview.breath.R
 
 
-class RecyclerAdapter(
+class RecyclerMiddleAdapter(
     private val context: Context
 ) :
-    RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+    RecyclerView.Adapter<RecyclerMiddleAdapter.ViewHolder>() {
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.doctor_item, viewGroup, false)
@@ -37,7 +37,7 @@ class RecyclerAdapter(
     }
 
     override fun getItemCount(): Int {
-        return 1000
+        return 20
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

@@ -1,33 +1,39 @@
-package com.interview.breath.ui
+package com.interview.breath
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
-import com.interview.breath.R
+import com.interview.breath.databinding.ActivityScrollingBinding
+import com.interview.breath.ui.RecyclerMiddleAdapter
+import com.interview.breath.ui.RecyclerPeresetAdapter
+import com.interview.breath.ui.ViewPagerAdapter
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
-class NewDocActivity : AppCompatActivity() {
+class ScrollingActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityScrollingBinding
 
     private var recyclerView: RecyclerView? = null
     private var linearLayoutManager: LinearLayoutManager? = null
-    private var recyclerAdapter: RecyclerAdapter? = null
+    private var recyclerAdapter: RecyclerMiddleAdapter? = null
 
     private var recyclerViewP: RecyclerView? = null
     private var linearLayoutManagerP: LinearLayoutManager? = null
-    private var recyclerAdapterP: RecyclerAdapter? = null
+    private var recyclerAdapterP: RecyclerPeresetAdapter? = null
 
-    @SuppressLint("ClickableViewAccessibility")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_new_doc)
+
+        binding = ActivityScrollingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+        binding.toolbarLayout.title = title
+
 
         //View Pager
         val springDotsIndicator = findViewById<WormDotsIndicator>(R.id.spring_dots_indicator)
@@ -41,7 +47,7 @@ class NewDocActivity : AppCompatActivity() {
         recyclerView = findViewById<View>(R.id.rv_design) as RecyclerView
         linearLayoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
         recyclerView!!.layoutManager = linearLayoutManager
-        recyclerAdapter = RecyclerAdapter(this@NewDocActivity)
+        recyclerAdapter = RecyclerMiddleAdapter(this@ScrollingActivity)
         recyclerView!!.adapter = recyclerAdapter
 
 
@@ -49,8 +55,9 @@ class NewDocActivity : AppCompatActivity() {
         recyclerViewP = findViewById<View>(R.id.rv_design_present) as RecyclerView
         linearLayoutManagerP = LinearLayoutManager(applicationContext, LinearLayoutManager.VERTICAL, false)
         recyclerViewP!!.layoutManager = linearLayoutManagerP
-        recyclerAdapterP = RecyclerAdapter(this@NewDocActivity)
+        recyclerAdapterP = RecyclerPeresetAdapter(this@ScrollingActivity)
         recyclerViewP!!.adapter = recyclerAdapterP
-    }
 
+
+    }
 }
