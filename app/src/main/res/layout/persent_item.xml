@@ -4,24 +4,40 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_glide"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/googleg_disabled_color_18"
-        app:civ_border_color="#E4F6F8"
-        app:civ_border_width="4dp"
+    <TextView
+        android:id="@+id/viewPeresent"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="66%"
+        android:textColor="@color/light_blue_A200"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="@color/light_blue_A200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewPeresent"
+        app:layout_constraintStart_toStartOf="@+id/viewPeresent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPeresent" />
 
     <TextView
         android:id="@+id/persentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
         android:text="We are happy to help you"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_glide"
-        app:layout_constraintStart_toEndOf="@+id/iv_glide"
-        app:layout_constraintTop_toTopOf="@+id/iv_glide" />
+        app:layout_constraintBottom_toBottomOf="@+id/viewPeresent"
+        app:layout_constraintStart_toEndOf="@+id/viewPeresent"
+        app:layout_constraintTop_toTopOf="@+id/viewPeresent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
