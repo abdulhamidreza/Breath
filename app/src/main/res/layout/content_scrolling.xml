@@ -21,18 +21,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
-            android:text="About the Program"
+            android:text="Our Athlete's Experience"
             android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_design"
             android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1"
             tools:listitem="@layout/doctor_item" />
@@ -42,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
+            android:layout_marginTop="14dp"
             android:text="Health outcome with the"
             android:textColor="@color/black"
             android:textSize="18sp"

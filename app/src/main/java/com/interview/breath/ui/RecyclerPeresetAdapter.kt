@@ -19,7 +19,7 @@ class RecyclerPeresetAdapter(
     RecyclerView.Adapter<RecyclerPeresetAdapter.ViewHolder>() {
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.doctor_item, viewGroup, false)
+            .inflate(R.layout.persent_item, viewGroup, false)
         return ViewHolder(view)
     }
 

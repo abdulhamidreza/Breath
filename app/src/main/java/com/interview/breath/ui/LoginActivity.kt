@@ -11,6 +11,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.interview.breath.R
+import com.interview.breath.ScrollingActivity
 
 
 class LoginActivity : AppCompatActivity() {
@@ -38,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
         val account = GoogleSignIn.getLastSignedInAccount(this)
 
         if (account != null) {
-            val intent = Intent(this@LoginActivity, LandingActivity::class.java)
+            val intent = Intent(this@LoginActivity, ScrollingActivity::class.java)
             startActivity(intent)
         }
         logInButton.setOnClickListener {
@@ -62,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
             try {
                 val account: GoogleSignInAccount? = task.getResult(ApiException::class.java)
 
-                val intent = Intent(this@LoginActivity, LandingActivity::class.java)
+                val intent = Intent(this@LoginActivity, ScrollingActivity::class.java)
                 startActivity(intent)
 
             } catch (e: ApiException) {

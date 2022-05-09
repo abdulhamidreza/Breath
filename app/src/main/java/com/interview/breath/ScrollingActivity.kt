@@ -1,6 +1,7 @@
 package com.interview.breath
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,7 +33,11 @@ class ScrollingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
+        binding.toolbarLayout.title = "About the Program"
+
+        binding.toolbarLayout.collapsedTitleGravity = Gravity.CENTER
+        binding.toolbarLayout.setExpandedTitleColor(getColor(R.color.black))
+        binding.toolbarLayout.setCollapsedTitleTextColor(getColor(R.color.black))
 
 
         //View Pager
