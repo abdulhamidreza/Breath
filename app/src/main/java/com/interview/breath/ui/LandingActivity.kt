@@ -93,8 +93,8 @@ class LandingActivity : AppCompatActivity() {
         val screenInches = Math.sqrt(x + y)
         return when {
             screenInches < 4 -> 3
-            screenInches < 6 -> 4
-            else -> 5
+            screenInches < 6 -> 3
+            else -> 4
         }
 
     }

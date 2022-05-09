@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout-v31/image_gridelayout.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.29523809523809524" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.16953125" />
         <entry key="app/src/main/res/layout/action_list.xml" value="0.29791666666666666" />
